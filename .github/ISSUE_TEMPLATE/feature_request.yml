@@ -1,0 +1,37 @@
+﻿name: Share a suggestion
+description: Have an idea that could make Turtleland better? We would like to hear it.
+title: "[Suggestion] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing an idea. It does not need to be polished, technical, or fully figured out. Rough ideas are welcome.
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to see?
+      description: Describe the idea in your own words. A sentence or two is enough.
+      placeholder: "Example: It would be useful if the Grand Exchange page could remember my last search."
+    validations:
+      required: true
+
+  - type: textarea
+    id: usefulness
+    attributes:
+      label: How would this help you?
+      description: Optional. This helps us understand what problem the idea would solve.
+      placeholder: "Example: I check the same items often, so it would save a few clicks."
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Optional. Add examples, screenshots, related ideas, or leave this completely blank.
+      placeholder: Add anything else you think would be useful.
+    validations:
+      required: false

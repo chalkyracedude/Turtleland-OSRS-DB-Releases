@@ -1,0 +1,49 @@
+﻿name: Report a bug
+description: Something is not working? Tell us what happened and we will take a look.
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking a moment to report this. You do not need to know why it broke or use technical language. Just tell us what you saw.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: A short description is completely fine.
+      placeholder: "Example: When I click Refresh in Manage Accounts, the page jumps to the top."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      description: Leave this blank if the answer is obvious or you are not sure.
+      placeholder: "Example: I expected the account to refresh without moving the page."
+    validations:
+      required: false
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can we make it happen again?
+      description: If you remember the steps, list them here. It is okay if you do not.
+      placeholder: |
+        1. Open Manage Accounts
+        2. Scroll down
+        3. Click Refresh
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else that might help?
+      description: Screenshots, error messages, your Turtleland version, or any other detail can go here. Please do not include passwords or other private information.
+      placeholder: Drag screenshots here or paste any error message you saw.
+    validations:
+      required: false
